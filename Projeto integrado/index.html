@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/fonts.css" rel="stylesheet">
+    <title>Ministério da Educação</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <form>
+            <input type="text" placeholder="Login">
+            <input type="email" placeholder="Senha">
+            <input type="submit" value="Entrar">
+        </form>
+        <ul style="list-style: none;">
+            <a href="#" id="cadastre-se-btn" style="text-decoration:none"><li>Cadastre-se</li></a>
+        </ul>
+    </header> 
+    
+    <div id="image">
+        <img src="images/mec.png" alt="logo-mec">
+    </div>
+
+    <main>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4012850.5092570367!2d-65.53742540065325!3d-10.82666375750571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92325cd96f516b57%3A0x733763d5340621dd!2zUm9uZMO0bmlh!5e0!3m2!1spt-BR!2sbr!4v1651448396512!5m2!1spt-BR!2sbr" width="450" height="250" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>        
+            <h2>Unidades e Polos</h2>
+            <p>
+            Selecione seu estado e cidade, assim poderá ver a unidade mais próxima de você!
+            </p>
+            <div class="content">
+
+                <div class="op">
+                  <select class="select" name="estados">
+                    <option value="null">Selecione um Estado</option>
+                    <option value="ro">Rondonia</option>
+                    <option value="sp">Sao Paulo</option>
+                    <option value="mt">Mato Grosso</option>
+                  </select>
+                </div>
+                <div class="op">
+                  <select class="select" name="cidades"></select>
+                </div>
+            </div>
+              
+            <div class="content result" name="board">
+                
+            </div>
+        </div>    
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>    
+<script src="script.js"></script>
+</body>
+
+</html>
+
